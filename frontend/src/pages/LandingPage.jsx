@@ -9,7 +9,7 @@ const LandingPage = () => {
   const [blogs, setBlogs] = useState([]);
 
 useEffect(() => {
-  fetch("http://127.0.0.1:8000/api/blogs")
+  fetch(`${import.meta.env.VITE_API_URL}/api/blogs`)
     .then(res => res.json())
     .then(data => setBlogs(data))
     .catch(err => console.log(err));
