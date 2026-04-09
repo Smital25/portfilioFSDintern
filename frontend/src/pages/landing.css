@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.talk-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #4f46e5;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  line-height: 1.3;
+}
+
+.hero-left span {
+  color: #4f46e5;
+}
+
+.desc {
+  margin-top: 20px;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.primary {
+  background: #4f46e5;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.secondary {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+
+/* IMAGE */
+.hero-right img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* GENERAL SECTION */
+.section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 80px 60px;
+  background: #f7f8ff;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 20px;
+}
+
+.about-card {
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.about-card h3 {
+  color: #4f46e5;
+}
+
+.about-highlight {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eef2ff;
+  border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  padding: 20px;
+  background: #f9f9ff;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+/* EXPERIENCE */
+.exp-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.exp-card {
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+}
+
+.company {
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+/* CONTACT */
+.contact {
+  background: #f9f9ff;
+}
+
+.contact-text {
+  max-width: 600px;
+  margin: auto;
+  color: #555;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.linkedin-btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.linkedin-btn:hover {
+  background: #0a66c2;
+  color: white;
+}
+
+/* 🔥 RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 250px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+}
+
+/* HERO RIGHT CONTAINER */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE FIX */
+.hero-right img {
+  width: 100%;
+  max-width: 500px;   /* control max size */
+  height: auto;
+  object-fit: contain; /* keeps proportions */
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+.primary:hover {
+  background: #3730a3;
+}
+
+.nav-links a,
+.nav-links a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+.nav-links a:last-child {
+  font-weight: bold;
+  color: #4f46e5;
+}

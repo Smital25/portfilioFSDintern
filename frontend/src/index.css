@@ -1,0 +1,13 @@
+/* styles.css */
+body{margin:0;font-family:Arial;background:#f5f7ff}
+.navbar{display:flex;justify-content:space-between;padding:20px 40px;background:#fff}
+.navbar a{margin:0 10px;text-decoration:none;color:#333}
+.hero{padding:80px 40px;background:#eef2ff}
+.hero h1{font-size:40px}
+.hero h2{color:#4f46e5}
+.btns button{margin:10px;padding:10px 20px;border:none;border-radius:20px;background:#4f46e5;color:#fff}
+.btns .outline{background:#fff;color:#4f46e5;border:1px solid}
+.section{padding:60px 40px;text-align:center}
+.skills span{display:inline-block;margin:10px;padding:10px 15px;background:#fff;border-radius:20px}
+.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.card{background:#fff;padding:20px;border-radius:10px;width:250px}
